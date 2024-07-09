@@ -1,0 +1,62 @@
+# STRINGS
+# double backslash (\\) produces a single backslash
+# backslash and b deletes the preceding letter
+# \n adds new line
+# Strings are iterable- character arrays
+# Iterates starting at 0 or -1 from the rightmost letter, increases and decreases respectively
+# slicing: [begin:end:step]
+# a[1:4]: stop before 4
+# a[-5,-2]: stop before -2
+# a[2:6:2]: step size 2. stop before 6
+# dont hop on opposite train
+# reversing a string 
+# extended slicing: omit beginning and end w [::-1]
+# this way, max possible values of beginning and ending
+# "adding" strings, len(str), a.upper() and a.lower(), casting: new_string = str(36)
+# id() function- good way to measure if a variable is mutable or immutable
+# NOTHING BUT SCRAP
+# ids are not addresses
+# they both refer to the same thing, but they aren't the same thing.
+# immutable- once created, it cannot be modified. However, it can be reassigned
+# assignment of an immutable variable creates a new memory address
+# individually changing a part of a string address cannot happen
+# YOU NEED MORE POWER
+# when printing variables of many different type, it auto casts them to be strings'
+# type casting: use curly brackets {}
+# user input taken via input()
+# .format takes the contents of the curly brackets and replaces them using the arguments\
+
+# LISTS
+# List type in python stres an ordered list of variable sequence
+# Varaibles can be of different type
+# List can be an element of a different list
+# List elements addressed using []
+# Lists are mutable- can be modified
+# clear() empties a lsit
+# insert (position, element): adds a new element at position - later elements moved back by one
+# pop(position): removes and retorns the element
+# ex: source.pop(0) where source = notebook will return the first letter n
+#extend(new_list): mege lissts
+# similar operator: list + new list
+# sort(): sorts list elements
+# count(element): counts occurences of an element value in the list
+# list type casting: list()
+# string.join(): joining iterable elements in the input argument, concatenating them w string inb etween
+# ,join(): merge list elements into a string
+# .reverse()- reverses a list
+# time.time()- begin and end clock time
+# ticused to begin, toc used for end
+# elapsed_time- toc-tic
+# genesis time is 1970, Jan.1, 00:00:00
+# time returns amount of seconds from 1970
+# popping the first n numbers in a list requires you to perform pop(0) n times
+# it takes the letter out, so the next letter becomes the index
+# while modifying lists, the IDs remain the same, cuz it's mutable
+# IS THIS WHAT I LOST TO?!
+
+
+# python Memory
+# For immutable integers of same values, small int values share memory/ID
+# large integers have different ID
+# same for strings
+# all floats have different IDs - Python does not compare floating points
