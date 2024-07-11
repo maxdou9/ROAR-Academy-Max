@@ -24,7 +24,8 @@
 # when printing variables of many different type, it auto casts them to be strings'
 # type casting: use curly brackets {}
 # user input taken via input()
-# .format takes the contents of the curly brackets and replaces them using the arguments\
+# .format takes the contents of the curly brackets and replaces them using the arguments
+
 
 # LISTS
 # List type in python stres an ordered list of variable sequence
@@ -72,11 +73,57 @@
 # for loop
 # continue- skips rest of code and jumps back to beginning
 
+# Functions
 
+# built-in functions
+# stand-alone functions include print, type, range, round, int
+# methods in objects are list.reverse() and string.format()
 
+# imported functions:
+# math.floor(), math.ceil, math,.sqrt, etc.
 
+# user-defined functions
+# extend imported function list
+# imported functions are user-defined functions created by other programmers
+
+# adding a .__doc__ after the function prints any triple- dot (""") comments
+# input values in a function call must match with its input argument definition
+# provide default values using equal signs int he arguments 
+
+# .sort() function is ascending normally
+# must set reverse as True in the argument to be descending
+# new_object = sorted(list/tuple/string) sorts lists
+
+# tuples and dictionaries
+# t = (value_1, value_2... etc)
+# t = vaue_1, value)2, n
+# r = tuple('abcde)
+# tuple elements can be addressed like a list
+# tuples are immutable. but their elements are mutable and can be changed
+# we can use > to compare tuples according to ASCII code
+# returns a boolean
+# dictionaries
+# every element is a (key, value) pair
+# ex: D = {1: one, 2:two...}
+# dictionary is a mutable type
+# add/modify entry: dictionary[key] = value
+# remove entry: del(dictionary[key])
+
+# Set Operations
+# Union- s|t or s.union(t)
+# Intersection- s&t or s.intersection(t)
+# Difference- s-t or s.difference(t)
+# Exlcusive (XOR)- s^t, or s.symmetric_difference(t)
+# s.issuperset(t)
+# s.issubset(t)
 
 
 
 # challenges 
 # 1-3 challenge 1 sucks
+
+
+# SMART goals are 
+# remember what you learned in carattini's class
+# specific, measurable, attainable, realistic, timely
+
