@@ -117,6 +117,13 @@
 # s.issuperset(t)
 # s.issubset(t)
 
+# Class Methods
+# Instance Methods - interact via self reference as the first argument
+# Class Mehods- methods that interact with class attributes via @clasmethod declaration
+# Statuc Methods- utility functions that do not interact with either instance or class attributes via @staticmethod declaration
+# Class and static methods can be called by referencing class name
+# inheritance: class(OtherClass)
+
 
 
 # challenges 
