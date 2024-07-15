@@ -124,6 +124,61 @@
 # Class and static methods can be called by referencing class name
 # inheritance: class(OtherClass)
 
+# Files
+# Four tiers of computer storage
+
+# CPU registers are located inside the computer processor (transient)
+# fastest acess speed, limited size
+# Low-level languages (C, C++) can directly reaad and assign register values, but not high-level languages such as Python
+
+# Main memory- refers to random-access memory (RAM) (transient)
+# slower speed than registers, but very fact GB/sec
+# 32-bit CPU: 32-bit address = 4 Gigabyte memory
+# 64-bit CPU: 52-bit address = 4 Peta byte memory
+
+# File system (persistent storage)
+# able to retain data when power off
+# much slower than transient storage (10G bps)
+# Usually not accessible by programs
+# Mount/Eject: controlled by the OS
+# Read/Write: Controlled by programs
+
+# Offline storage (persisitent storage)
+# Virtually unlimited storage space
+# Storaed data not immediately available w/o human intervention
+# Tape recording, data, center, etc
+# Data code vault
+# Gloabl seed vault
+
+
+# useful os functons
+# import os first
+# os.path.abspath(_file__): string of absolute pathfilename
+# os.path.dirname: retainsthe path portion of the string (remove filename portion
+# os.cwrd: get current work directiory (includes files)
+#os. path_exists(str): returns whether or not the path given exists
+# 0s.listdir(string): returns a list containing filenames and directory names at the string location
+
+# numpy
+# numpy.arange(): 1-D array taking a range of values
+# np.arange(9); print(a) returns all values from 1-8
+# numpy.reshape(): change array shape following row- first order
+# a = a.reshape((3,3)); print (a) returns a 3x3 array
+# slicing
+# print(a[:2,1:3]) takes rows [0,1], columns [1,2]
+# np.prod(): retrm [rpdict pf array]
+# np.sum(): retursn um of array
+
+# Linear Algebra Routines
+# A =np.array([1,1],[4,2])
+# b = np. array ([35],[110])
+# A_inverse = np.linalg.inv(A)
+# x = A_inverse @ b
+# it returns 20., 15
+
+# subroutines directly solving
+# np.linalg.solve(A,b
+
 
 
 # challenges 

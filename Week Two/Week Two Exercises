@@ -1,0 +1,6 @@
+file  = open('motto.txt', 'r')
+content = file.read()
+print(content)
+new_content = open('motto.txt', 'w')
+new_content = file.write('Let there be light!')
+print(new_content)

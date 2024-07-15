@@ -1,0 +1,24 @@
+import numpy as np
+
+# Creating a matrix
+matrix1 = np.array([[1, 2], [3, 4]])
+matrix2 = np.array([[5, 6], [7, 8]])
+
+# Matrix addition
+sum_matrix = matrix1 + matrix2
+
+# Matrix multiplication
+product_matrix = np.dot(matrix1, matrix2)
+
+# Determinant
+determinant = np.linalg.det(matrix1)
+
+# Inverse
+inverse_matrix = np.linalg.inv(matrix1)
+
+print("Matrix 1:\n", matrix1)
+print("Matrix 2:\n", matrix2)
+print("Sum:\n", sum_matrix)
+print("Product:\n", product_matrix)
+print("Determinant of Matrix 1:", determinant)
+print("Inverse of Matrix 1:\n", inverse_matrix)   
