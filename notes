@@ -179,6 +179,31 @@
 # subroutines directly solving
 # np.linalg.solve(A,b
 
+# visualization
+
+#pyplot
+# xticks function- replaces x values w strings (doesn't matter what the strings are)
+# same 4 y ticks
+# look up color codes
+# linestyles :3 :3 :3
+# specify marker design with marker code (e.g b--+) -- this shows te marker for each point of data
+# plt.figure() returns empty graph
+# figure().add_subplot(x,y , k) returns an array with x rows and y columns
+# k gives the pointer to the kth axis
+# baasically assigns it to the kth position
+# so dont make k the same
+# idiot
+# .spines returns the axis
+# ex: .spines(['left']) returns the leftmovst axis
+# setting position at 'data' sets it respective to the data
+
+# widgets- objects that can be displayed by ppyl]plot and can be interacted with mice or keyboards
+# slider- change value within min and max values by sliding the window by mouse
+# radiobuttons: choose from multiple choices
+# ex: plot a sinusoid w adjustable amp. freq, color
+# import sliders and radiobuttons seperately from matplotlib.widgets (Slider, RadioButtons)
+# hit up widget_slider for full notes
+
 
 
 # challenges 

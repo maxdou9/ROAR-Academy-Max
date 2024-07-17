@@ -14,28 +14,28 @@ plt.subplots_adjust(left=0.25, bottom=0.25)
 t = np.arange(0.0, 1.0, 0.001)
 a0 = 5; f0 = 3; delta_f = 0.1; delta_a = 0.1
 s = a0 * np.sin(2 * np.pi * f0 * t)
-l, = plt.plot(t, s, lw=2)
+l, = plt.plot(t, s, lw=2) # l used to refresh the plot
 ax.margins(x=0)
 
 # Create two sliders
 axcolor = 'lightgoldenrodyellow'
-axfreq = plt.axes([0.25, 0.1, 0.65, 0.03], facecolor=axcolor)
-axamp = plt.axes([0.25, 0.15, 0.65, 0.03], facecolor=axcolor)
-sfreq = Slider(axfreq, 'Freq', 0.1, 30.0, valinit=f0, valstep=delta_f)
-samp = Slider(axamp, 'Amp', 0.1, 10.0, valinit=a0, valstep=delta_a)
+axfreq = plt.axes([0.25, 0.1, 0.65, 0.03], facecolor=axcolor) # x axes are the same: 0.25 | y-axis is 0.1 (1/10) of the height | width is 0.65 -- leaves 10% of the graph as boundary | width is 0.3
+axamp = plt.axes([0.25, 0.15, 0.65, 0.03], facecolor=axcolor) # y-axis is 0.15 (15%) of the height
+sfreq = Slider(axfreq, 'Freq', 0.1, 30.0, valinit=f0, valstep=delta_f) # axfreq and axamp are the position and color of the axes | name = 'Freq | value ranges from 0.1 - 30 | each value changes the graph by 0.1
+samp = Slider(axamp, 'Amp', 0.1, 10.0, valinit=a0, valstep=delta_a) # moving the s,ider changes the graph by 0.1 at a time
 
 # slider update actions
 def update(val):
     amp = samp.val
     freq = sfreq.val
-    l.set_ydata(amp*np.sin(2*np.pi*freq*t))
+    l.set_ydata(amp*np.sin(2*np.pi*freq*t)) # resets the graph in the y-axis w/equations for amplitude and frequency - cool!
     fig.canvas.draw_idle()
 
-sfreq.on_changed(update)
-samp.on_changed(update)
+sfreq.on_changed(update) # set up OS- these are event handlers
+samp.on_changed(update) # when the slider is changed, update the values
 
 # Create a radio button
-rax = plt.axes([0.025, 0.5, 0.15, 0.15], facecolor=axcolor)
+rax = plt.axes([0.025, 0.5, 0.15, 0.15], facecolor=axcolor) # sets position
 radio = RadioButtons(rax, ('red', 'blue', 'green'), active=0)
 l.set_color(radio.value_selected)
 # radio button update actions

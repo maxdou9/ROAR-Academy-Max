@@ -16,8 +16,8 @@ plt.plot(x, y0, color = 'r', linewidth = 3)
 
 # Create a dash cos function sample
 y1 = np.cos(x)
-plt.plot(x, y1, 'b--', linewidth = 1)
-plt.ylim(-1, 1)
+plt.plot(x, y1, 'b--', linewidth = 1) # b infers that the color is blue, double dash gives a dashed ;ome
+plt.ylim(-1, 1) # sets limits
 plt.xlim(0,2*np.pi)
-plt.xticks(np.arange(0,2*np.pi,np.pi/4), ['0', 'pi/4', 'pi/2', '3pi/4', 'pi', '5pi/4', '3pi/2', '7pi/4'])
+plt.xticks(np.arange(0,2*np.pi,np.pi/4), ['0', 'pi/4', 'pi/2', '3pi/4', 'pi', '5pi/4', '3pi/2', '7pi/4']) # replaces values with abstract (gives stuff like pi/4 instead )
 plt.show()
