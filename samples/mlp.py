@@ -87,4 +87,3 @@ for i in range(100):
 print('Test accuracy:', score/100)
 plt.show()
 
-print('HELLO???')
